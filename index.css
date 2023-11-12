@@ -1,0 +1,156 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+   
+    
+}
+
+header {
+    background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    color: white;
+    padding: 1em 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    background: linear-gradient(120deg, #a6c0fe 0%, #ffffff 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main .left-item {
+    flex: 2;
+    order: 1; 
+}
+
+.main .right-item {
+    flex: 1;
+    order: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.booking-form {
+    background: white;
+    padding: 2em;
+    max-width: 600px;
+    margin: 2em auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.booking-form h1 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: .5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+.booking-form .trip-type {
+    margin-bottom: 1em;
+}
+
+.booking-form button {
+    background: #5c6bc0;
+    color: white;
+    padding: .5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links,
+    .auth {
+        display: none;
+    }
+}
+.logo a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-weight: bold; 
+
+}
+
+#loginBtn {
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: #a6c0fe; 
+    padding: 5px 15px; 
+    border-radius: 15px; 
+    border: 1px solid #f68084; 
+    font-weight: bold; 
+    transition: all 0.3s ease; 
+}
+
+#loginBtn:hover, #loginBtn:focus {
+    color: #f68084; 
+    background-color: #ffffff; 
+    text-decoration: none; 
+}
+.login-signup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}

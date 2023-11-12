@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.availableflights, .yourflights {
+    flex: 1;  
+    padding: 10px;  
+}
+
+.flight {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+    border-radius: 8px;  
+}
+
+.flight h2 {
+    font-size: 16px;  
+    margin-bottom: 8px;  
+}
+
+
+
+
+
+.yourflights div {
+    margin: 5px 0;
+}
+
+.availableflights h1, .yourflights h1 {
+    color: #000000;
+    padding: 10px 10px;
+    font-family: 'Roboto', sans-serif; 
+    border: 1px solid  #4A90E2;
+    border-radius: 10px;
+    background-color: #729e50;
+}
+.book {
+    padding: 10px 20px; 
+    margin-top: 10vh;
+    width: 100px;
+    height: 100px;
+    background-color: #34568B;
+    color: white; 
+    border: none; 
+    border-radius: 60px; 
+    font-size: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Home {
+    padding: 10px 20px; 
+    margin-top: 10vh;
+    width: 100px;
+    height: 100px;
+    background-color: #36454F;
+    color: white; 
+    border: none; 
+    border-radius: 60px; 
+    font-size: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.Home:hover {
+    background-color: #1F4068;
+    color: #f3f3f3;
+}
+.book:hover {
+    background-color: #2C3333;
+   
+}
+
+
+@media (max-width: 768px) {
+    .sec {
+        flex-direction: column;
+    }
+
+    .availableflights, .yourflights {
+        flex: none; 
+    }
+}

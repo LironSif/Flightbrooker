@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Siflight</title>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Siflight</a>
+            </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="myflight"><a href="flight-list.html" id="myFlightLink">My Flights</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="login-signup">
+            <h3 id="myHeader"> </h3>
+            <a href="login.html" id="loginBtn">Login</a>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        <div class="right-item">
+            <img src="res/pngwing.com.png" alt="">
+        </div>
+        
+        <div class="left-item">
+            <section class="booking-form">
+                <h1>WHERE WOULD YOU LIKE TO GO ?</h1>
+                <form>
+                  <label for="from">From</label>
+                  <input type="text" id="from" placeholder="Ottawa Macdonald-International Airport, Canada">
+                  
+                  <label for="to">To</label>
+                  <input type="text" id="to" placeholder="New Delhi Airport, India">
+                  
+                  <label for="date">Departure date</label>
+                  <input type="date" id="date" value="2018-05-15">
+
+                  <label for="date">Return date</label>
+                  <input type="date" id="date" value="2018-06-15">
+                  
+                  <label for="class">Passenger & Class</label>
+                  <select id="class">
+                    <option value="1 Adult - Business">1 Adult - Business</option>
+                  </select>
+                  
+      
+                  <button type="submit">BOOK NOW</button>
+                </form>
+              </section>
+        </div>
+        
+      </main>
+
+      <footer>
+        <p>© 2023 Siflight. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="login.js" defer></script>
+</body>
+</html>
+
